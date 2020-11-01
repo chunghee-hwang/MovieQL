@@ -1,7 +1,11 @@
 # MovieQL
 
-Movie API with Graphql
-노마드 코더의 [GraphQL로 영화 API 만들기](https://nomadcoders.co/graphql-for-beginners/) 를 참고하고 정리한 레포지토리입니다.
+Movie API & App with Graphql
+
+## 참고 강의
+
+- 노마드코더의 [GraphQL로 영화 API 만들기](https://nomadcoders.co/graphql-for-beginners)
+- 노마드코더의 [GraphQL로 영화 웹 앱 만들기](https://nomadcoders.co/react-graphql-for-beginners)
 
 ## Graphql로 해결할 수 있는 문제들
 
@@ -75,52 +79,7 @@ query {
 }
 ```
 
-## 서버 개발환경 구성
+## 학습 목록
 
-```bash
-yarn init
-yarn add graphql-yoga
-```
-
-- 파일을 수정할 때마다 서버를 재시작하는 모듈 설치
-  ```bash
-  yarn global add nodemon
-  ```
-- ES6 코드로 동작하도록 babel 설치
-
-  ```bash
-  yarn global add babel-cli
-  ```
-
-- nodejs에서 동작하는 fetch 모듈 설치
-
-  ```bash
-  yarn add axios --dev
-  ```
-
-- package.json에 scripts 추가
-
-  ```js
-  "scripts": {
-      "start": "nodemon --exec babel-node index.js"
-  }
-  ```
-
-- .babelrc 파일 추가 후 다음 내용 추가
-  ```js
-  {
-      "presets": ["env", "stage-3"]
-  }
-  ```
-
-```bash
-yarn add babel-cli babel-preset-env babel-preset-stage-3 --dev
-
-yarn start
-```
-
-## 서버 실행해보기
-
-- index.js 작성
-- graphql 폴더에 schema.graphql와 resolver.js(DAO와 비슷) 작성 (스키마와 리졸버에 있는 컬럼 내용은 동일해야한다.)
-- localhost:4000 으로 접속
+1. [GraphQL로 영화 API 만들기](./backend)
+2. [GraphQL로 영화 웹 앱 만들기](./frontend)
