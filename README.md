@@ -87,9 +87,17 @@ yarn add graphql-yoga
   yarn global add nodemon
   ```
 - ES6 코드로 동작하도록 babel 설치
+
   ```bash
   yarn global add babel-cli
   ```
+
+- nodejs에서 동작하는 fetch 모듈 설치
+
+  ```bash
+  yarn add axios --dev
+  ```
+
 - package.json에 scripts 추가
 
   ```js
